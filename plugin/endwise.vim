@@ -28,9 +28,9 @@ augroup endwise " {{{1
         \ let b:endwise_syngroups = 'shConditional,shLoop,shIf,shFor,shRepeat,shCaseEsac,zshConditional,zshRepeat,zshDelimiter'
   autocmd FileType vb,vbnet,aspvbs
         \ let b:endwise_addition = 'End &' |
-        \ let b:endwise_words = 'Function,Sub,Class,Module,Enum,Namespace' |
+        \ let b:endwise_words = 'Function,Sub,Class,Module,Enum,Namespace,If,Select' |
         \ let b:endwise_pattern = '\%(\<End\>.*\)\@<!\<&\>' |
-        \ let b:endwise_syngroups = 'vbStatement,vbnetStorage,vbnetProcedure,vbnet.*Words,AspVBSStatement'
+        \ let b:endwise_syngroups = 'vbStatement,vbConditional,vbnetStorage,vbnetProcedure,vbnet.*Words,AspVBSStatement'
   autocmd FileType vim
         \ let b:endwise_addition = 'end&' |
         \ let b:endwise_words = 'fu\%[nction],wh\%[ile],if,for,try' |
